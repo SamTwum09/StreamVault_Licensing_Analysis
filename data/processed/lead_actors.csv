@@ -1,0 +1,337 @@
+movie_id,actor_id,actor_name,cast_order,character
+10138,3223,Robert Downey Jr.,0,Tony Stark
+10138,12052,Gwyneth Paltrow,1,Pepper Potts
+10138,1896,Don Cheadle,2,Lt. Col. James 'Rhodey' Rhodes
+10192,12073,Mike Myers,0,Shrek (voice)
+10192,776,Eddie Murphy,1,Donkey (voice)
+10192,6941,Cameron Diaz,2,Princess Fiona (voice)
+10193,31,Tom Hanks,0,Woody (voice)
+10193,12898,Tim Allen,1,Buzz Lightyear (voice)
+10193,3234,Joan Cusack,2,Jessie (voice)
+105,521,Michael J. Fox,0,Marty McFly
+105,1062,Christopher Lloyd,1,Emmett Brown
+105,1064,Crispin Glover,2,George McFly
+10681,670,Ben Burtt,0,WALL·E / M-O (voice)
+10681,72754,Elissa Knight,1,EVE (voice)
+10681,60074,Jeff Garlin,2,Captain (voice)
+11,2,Mark Hamill,0,Luke Skywalker
+11,3,Harrison Ford,1,Han Solo
+11,4,Carrie Fisher,2,Princess Leia Organa
+111,1158,Al Pacino,0,Tony Montana
+111,1159,Steven Bauer,1,Manny Ray
+111,1160,Michelle Pfeiffer,2,Elvira
+1124,6968,Hugh Jackman,0,Robert Angier
+1124,3894,Christian Bale,1,Alfred Borden
+1124,3895,Michael Caine,2,Cutter
+120,109,Elijah Wood,0,Frodo
+120,1327,Ian McKellen,1,Gandalf
+120,110,Viggo Mortensen,2,Aragorn
+121,109,Elijah Wood,0,Frodo
+121,1327,Ian McKellen,1,Gandalf
+121,110,Viggo Mortensen,2,Aragorn
+122,109,Elijah Wood,0,Frodo
+122,1327,Ian McKellen,1,Gandalf
+122,110,Viggo Mortensen,2,Aragorn
+122917,1327,Ian McKellen,0,Gandalf the Grey
+122917,7060,Martin Freeman,1,Bilbo Baggins
+122917,30315,Richard Armitage,2,Thorin Oakenshield
+12444,10980,Daniel Radcliffe,0,Harry Potter
+12444,10990,Emma Watson,1,Hermione Granger
+12444,10989,Rupert Grint,2,Ron Weasley
+12445,10980,Daniel Radcliffe,0,Harry Potter
+12445,10990,Emma Watson,1,Hermione Granger
+12445,10989,Rupert Grint,2,Ron Weasley
+129,19587,Rumi Hiiragi,0,Chihiro (voice)
+129,19588,Miyu Irino,1,Haku (voice)
+129,19589,Mari Natsuki,2,Yubaba / Zeniba (voice)
+13,31,Tom Hanks,0,Forrest Gump
+13,32,Robin Wright,1,Jenny Curran
+13,33,Gary Sinise,2,Lieutenant Dan Taylor
+1422,6193,Leonardo DiCaprio,0,Billy
+1422,1892,Matt Damon,1,Colin
+1422,514,Jack Nicholson,2,Costello
+155,3894,Christian Bale,0,Bruce Wayne
+155,1810,Heath Ledger,1,Joker
+155,6383,Aaron Eckhart,2,Harvey Dent
+1571,62,Bruce Willis,0,John McClane
+1571,18082,Timothy Olyphant,1,Thomas Gabriel
+1571,15033,Justin Long,2,Matt Farrell
+1572,62,Bruce Willis,0,John McClane
+1572,16940,Jeremy Irons,1,Simon
+1572,2231,Samuel L. Jackson,2,Zeus Carver
+1573,62,Bruce Willis,0,John McClane
+1573,7673,Bonnie Bedelia,1,Holly McClane
+1573,6573,William Sadler,2,Stuart
+157336,10297,Matthew McConaughey,0,Cooper
+157336,1813,Anne Hathaway,1,Brand
+157336,3895,Michael Caine,2,Professor Brand
+161,1461,George Clooney,0,Danny Ocean
+161,287,Brad Pitt,1,Rusty Ryan
+161,1271,Andy Garcia,2,Terry Benedict
+163,1461,George Clooney,0,Danny Ocean
+163,1204,Julia Roberts,1,Tess Ocean
+163,287,Brad Pitt,2,Rusty Ryan
+165,521,Michael J. Fox,0,Marty McFly / Marty McFly Junior / Marlene McFly
+165,1062,Christopher Lloyd,1,Doctor Emmett Brown
+165,1063,Lea Thompson,2,Lorraine
+166426,85,Johnny Depp,0,Jack Sparrow
+166426,3810,Javier Bardem,1,Armando Salazar
+166426,118,Geoffrey Rush,2,Hector Barbossa
+1726,3223,Robert Downey Jr.,0,Tony Stark
+1726,18288,Terrence Howard,1,Rhodey
+1726,1229,Jeff Bridges,2,Obadiah Stane
+177677,500,Tom Cruise,0,Ethan Hunt
+177677,17604,Jeremy Renner,1,William Brandt
+177677,11108,Simon Pegg,2,Benji Dunn
+1865,85,Johnny Depp,0,Jack Sparrow
+1865,955,Penélope Cruz,1,Angelica
+1865,118,Geoffrey Rush,2,Hector Barbossa
+1891,2,Mark Hamill,0,Luke Skywalker
+1891,3,Harrison Ford,1,Han Solo
+1891,4,Carrie Fisher,2,Princess Leia
+1892,2,Mark Hamill,0,Luke Skywalker
+1892,3,Harrison Ford,1,Han Solo
+1892,4,Carrie Fisher,2,Princess Leia
+1893,3896,Liam Neeson,0,Qui-Gon Jinn
+1893,3061,Ewan McGregor,1,Obi-Wan Kenobi
+1893,524,Natalie Portman,2,Padmé Amidala
+1894,17244,Hayden Christensen,0,Anakin Skywalker
+1894,3061,Ewan McGregor,1,Obi-Wan Kenobi
+1894,524,Natalie Portman,2,Padmé Amidala
+1895,17244,Hayden Christensen,0,Anakin Skywalker / Darth Vader
+1895,3061,Ewan McGregor,1,Obi-Wan Kenobi
+1895,524,Natalie Portman,2,Padmé Amidala
+196,521,Michael J. Fox,0,Marty McFly / Seamus McFly
+196,1062,Christopher Lloyd,1,Doctor Emmett Brown
+196,2453,Mary Steenburgen,2,Clara Clayton
+217,3,Harrison Ford,0,Indiana Jones
+217,112,Cate Blanchett,1,Irina Spalko
+217,650,Karen Allen,2,Marion Ravenwood
+218,1100,Arnold Schwarzenegger,0,Terminator
+218,2712,Michael Biehn,1,Kyle Reese
+218,2713,Linda Hamilton,2,Sarah Connor
+22,85,Johnny Depp,0,Jack Sparrow
+22,118,Geoffrey Rush,1,Barbossa
+22,114,Orlando Bloom,2,Will Turner
+238,3084,Marlon Brando,0,Don Vito Corleone
+238,1158,Al Pacino,1,Michael Corleone
+238,3085,James Caan,2,Sonny Corleone
+24,139,Uma Thurman,0,The Bride
+24,140,Lucy Liu,1,O-Ren Ishii
+24,2535,Vivica A. Fox,2,Vernita Green
+240,1158,Al Pacino,0,Don Michael Corleone
+240,3087,Robert Duvall,1,Tom Hagen
+240,3092,Diane Keaton,2,Kay Corleone
+242,1158,Al Pacino,0,Michael Corleone
+242,3092,Diane Keaton,1,Kay Adams
+242,3094,Talia Shire,2,Connie Corleone Rizzi
+24428,3223,Robert Downey Jr.,0,Tony Stark / Iron Man
+24428,16828,Chris Evans,1,Steve Rogers / Captain America
+24428,103,Mark Ruffalo,2,Bruce Banner / The Hulk
+2501,1892,Matt Damon,0,Jason Bourne
+2501,679,Franka Potente,1,Marie Helena Kreutz
+2501,2955,Chris Cooper,2,Alexander Conklin
+2502,1892,Matt Damon,0,Jason Bourne
+2502,679,Franka Potente,1,Marie Helene Kreutz
+2502,1248,Brian Cox,2,Ward Abbott
+2503,1892,Matt Damon,0,Jason Bourne
+2503,12041,Julia Stiles,1,Nicky Parsons
+2503,11064,David Strathairn,2,Noah Vosen
+272,3894,Christian Bale,0,Bruce Wayne / Batman
+272,3895,Michael Caine,1,Alfred
+272,3896,Liam Neeson,2,Ducard
+27205,6193,Leonardo DiCaprio,0,Dom Cobb
+27205,24045,Joseph Gordon-Levitt,1,Arthur
+27205,3899,Ken Watanabe,2,Saito
+274,1038,Jodie Foster,0,Clarice Starling
+274,4173,Anthony Hopkins,1,Dr. Hannibal Lecter
+274,349,Scott Glenn,2,Jack Crawford
+278,504,Tim Robbins,0,Andy Dufresne
+278,192,Morgan Freeman,1,Ellis Boyd 'Red' Redding
+278,4029,Bob Gunton,2,Warden Norton
+280,1100,Arnold Schwarzenegger,0,The Terminator
+280,2713,Linda Hamilton,1,Sarah Connor
+280,820,Edward Furlong,2,John Connor
+285,85,Johnny Depp,0,Jack Sparrow
+285,118,Geoffrey Rush,1,Barbossa
+285,114,Orlando Bloom,2,Will Turner
+296,1100,Arnold Schwarzenegger,0,The Terminator
+296,6408,Nick Stahl,1,John Connor
+296,6194,Claire Danes,2,Kate Brewster
+298,1461,George Clooney,0,Danny Ocean
+298,287,Brad Pitt,1,Rusty Ryan
+298,1158,Al Pacino,2,Willy Bank
+299534,3223,Robert Downey Jr.,0,Tony Stark / Iron Man
+299534,16828,Chris Evans,1,Steve Rogers / Captain America
+299534,103,Mark Ruffalo,2,Bruce Banner / Hulk
+299536,3223,Robert Downey Jr.,0,Tony Stark / Iron Man
+299536,16828,Chris Evans,1,Steve Rogers / Captain America
+299536,74568,Chris Hemsworth,2,Thor
+301528,31,Tom Hanks,0,Woody (voice)
+301528,12898,Tim Allen,1,Buzz Lightyear (voice)
+301528,8873,Annie Potts,2,Bo Peep (voice)
+329,4783,Sam Neill,0,Grant
+329,4784,Laura Dern,1,Ellie
+329,4785,Jeff Goldblum,2,Malcolm
+330,4785,Jeff Goldblum,0,Ian Malcolm
+330,1231,Julianne Moore,1,Sarah Harding
+330,4935,Pete Postlethwaite,2,Roland Tembo
+331,4783,Sam Neill,0,Dr. Alan Grant
+331,3905,William H. Macy,1,Paul Kirby
+331,4939,Téa Leoni,2,Amanda Kirby
+348,4139,Tom Skerritt,0,Dallas
+348,10205,Sigourney Weaver,1,Ripley
+348,5047,Veronica Cartwright,2,Lambert
+393,139,Uma Thurman,0,Beatrix Kiddo / The Bride / 'Black Mamba' / Mommy
+393,141,David Carradine,1,Bill 'Snake Charmer'
+393,589,Daryl Hannah,2,Elle Driver 'California Mountain Snake'
+41513,111455,Katy Perry,0,Smurfette (voice)
+41513,13593,Jonathan Winters,1,Papa Smurf (voice)
+41513,5587,Hank Azaria,2,Gargamel
+424,3896,Liam Neeson,0,Oskar Schindler
+424,2282,Ben Kingsley,1,Itzhak Stern
+424,5469,Ralph Fiennes,2,Amon Goeth
+425,15757,Ray Romano,0,Manfred 'Manny' (voice)
+425,5723,John Leguizamo,1,Sid (voice)
+425,5724,Denis Leary,2,Diego (voice)
+429,190,Clint Eastwood,0,Blondie
+429,3265,Eli Wallach,1,Tuco Ramirez
+429,4078,Lee Van Cleef,2,Sentenza / Angel Eyes
+49026,3894,Christian Bale,0,Bruce Wayne
+49026,64,Gary Oldman,1,Commissioner Gordon
+49026,2524,Tom Hardy,2,Bane
+49051,7060,Martin Freeman,0,Bilbo Baggins
+49051,1327,Ian McKellen,1,Gandalf the Grey
+49051,30315,Richard Armitage,2,Thorin Oakenshield
+534,3894,Christian Bale,0,John Connor
+534,65731,Sam Worthington,1,Marcus Wright
+534,56455,Moon Bloodgood,2,Blair Williams
+550,819,Edward Norton,0,Narrator
+550,287,Brad Pitt,1,Tyler Durden
+550,1283,Helena Bonham Carter,2,Marla Singer
+562,62,Bruce Willis,0,John McClane
+562,4566,Alan Rickman,1,Hans Gruber
+562,7674,Alexander Godunov,2,Karl
+56292,500,Tom Cruise,0,Ethan Hunt
+56292,52851,Paula Patton,1,Jane
+56292,11108,Simon Pegg,2,Benji
+57158,1327,Ian McKellen,0,Gandalf the Grey
+57158,7060,Martin Freeman,1,Bilbo Baggins
+57158,30315,Richard Armitage,2,Thorin Oakenshield
+578,6355,Roy Scheider,0,Brody
+578,8606,Robert Shaw,1,Quint
+578,3037,Richard Dreyfuss,2,Hooper
+58,85,Johnny Depp,0,Jack Sparrow
+58,114,Orlando Bloom,1,Will Turner
+58,116,Keira Knightley,2,Elizabeth Swann
+585,1230,John Goodman,0,Sullivan (voice)
+585,7904,Billy Crystal,1,Mike (voice)
+585,7905,Mary Gibbs,2,Boo (voice)
+603,6384,Keanu Reeves,0,Neo
+603,2975,Laurence Fishburne,1,Morpheus
+603,530,Carrie-Anne Moss,2,Trinity
+604,6384,Keanu Reeves,0,Neo
+604,2975,Laurence Fishburne,1,Morpheus
+604,530,Carrie-Anne Moss,2,Trinity
+605,6384,Keanu Reeves,0,Neo
+605,2975,Laurence Fishburne,1,Morpheus
+605,530,Carrie-Anne Moss,2,Trinity
+620,1532,Bill Murray,0,Dr. Peter Venkman
+620,707,Dan Aykroyd,1,Dr. Raymond Stantz
+620,1524,Harold Ramis,2,Dr. Egon Spengler
+641,9560,Ellen Burstyn,0,Sara Goldfarb
+641,7499,Jared Leto,1,Harry Goldfarb
+641,6161,Jennifer Connelly,2,Marion Silver
+671,10980,Daniel Radcliffe,0,Harry Potter
+671,10989,Rupert Grint,1,Ron Weasley
+671,10990,Emma Watson,2,Hermione Granger
+672,10980,Daniel Radcliffe,0,Harry Potter
+672,10989,Rupert Grint,1,Ron Weasley
+672,10990,Emma Watson,2,Hermione Granger
+673,10980,Daniel Radcliffe,0,Harry Potter
+673,10989,Rupert Grint,1,Ron Weasley
+673,10990,Emma Watson,2,Hermione Granger
+674,10980,Daniel Radcliffe,0,Harry Potter
+674,10989,Rupert Grint,1,Ron Weasley
+674,10990,Emma Watson,2,Hermione Granger
+675,10980,Daniel Radcliffe,0,Harry Potter
+675,10989,Rupert Grint,1,Ron Weasley
+675,10990,Emma Watson,2,Hermione Granger
+679,10205,Sigourney Weaver,0,Ripley
+679,10206,Carrie Henn,1,Newt
+679,2712,Michael Biehn,2,Corporal Hicks
+680,8891,John Travolta,0,Vincent Vega
+680,2231,Samuel L. Jackson,1,Jules Winnfield
+680,139,Uma Thurman,2,Mia Wallace
+68721,3223,Robert Downey Jr.,0,Tony Stark
+68721,12052,Gwyneth Paltrow,1,Pepper Potts
+68721,1896,Don Cheadle,2,Colonel James Rhodes
+76341,2524,Tom Hardy,0,Max Rockatansky
+76341,6885,Charlize Theron,1,Imperator Furiosa
+76341,3292,Nicholas Hoult,2,Nux
+767,10980,Daniel Radcliffe,0,Harry Potter
+767,10989,Rupert Grint,1,Ron Weasley
+767,10990,Emma Watson,2,Hermione Granger
+769,380,Robert De Niro,0,James Conway
+769,11477,Ray Liotta,1,Henry Hill
+769,4517,Joe Pesci,2,Tommy DeVito
+77,529,Guy Pearce,0,Leonard
+77,530,Carrie-Anne Moss,1,Natalie
+77,532,Joe Pantoliano,2,Teddy
+78,3,Harrison Ford,0,Deckard
+78,585,Rutger Hauer,1,Batty
+78,586,Sean Young,2,Rachael
+8077,10205,Sigourney Weaver,0,Ripley
+8077,17764,Charles S. Dutton,1,Dillon
+8077,4391,Charles Dance,2,Clemens
+8078,10205,Sigourney Weaver,0,Ripley
+8078,1920,Winona Ryder,1,Call
+8078,2413,Dominique Pinon,2,Vriess
+808,12073,Mike Myers,0,Shrek / Blind Mouse (voice)
+808,776,Eddie Murphy,1,Donkey (voice)
+808,6941,Cameron Diaz,2,Princess Fiona (voice)
+809,12073,Mike Myers,0,Shrek (voice)
+809,776,Eddie Murphy,1,Donkey (voice)
+809,6941,Cameron Diaz,2,Princess Fiona (voice)
+810,12073,Mike Myers,0,Shrek (voice)
+810,776,Eddie Murphy,1,Donkey (voice)
+810,6941,Cameron Diaz,2,Princess Fiona (voice)
+8355,15757,Ray Romano,0,Manny (voice)
+8355,5723,John Leguizamo,1,Sid (voice)
+8355,5724,Denis Leary,2,Diego (voice)
+85,3,Harrison Ford,0,Indiana Jones
+85,650,Karen Allen,1,Marion Ravenwood
+85,652,Paul Freeman,2,Dr. René Belloq
+8587,4756,Matthew Broderick,0,Simba (voice)
+8587,20005,Moira Kelly,1,Nala (voice)
+8587,16940,Jeremy Irons,2,Scar (voice)
+862,31,Tom Hanks,0,Woody (voice)
+862,12898,Tim Allen,1,Buzz Lightyear (voice)
+862,7167,Don Rickles,2,Mr. Potato Head (voice)
+863,31,Tom Hanks,0,Woody (voice)
+863,12898,Tim Allen,1,Buzz Lightyear (voice)
+863,3234,Joan Cusack,2,Jessie (voice)
+87,3,Harrison Ford,0,Indiana Jones
+87,689,Kate Capshaw,1,Willie Scott
+87,690,Ke Huy Quan,2,Short Round
+89,3,Harrison Ford,0,Indiana Jones
+89,738,Sean Connery,1,Professor Henry Jones
+89,656,Denholm Elliott,2,Marcus Brody
+950,15757,Ray Romano,0,Manny (voice)
+950,5723,John Leguizamo,1,Sid (voice)
+950,5724,Denis Leary,2,Diego (voice)
+954,500,Tom Cruise,0,Ethan Hunt
+954,10127,Jon Voight,1,Jim Phelps
+954,4885,Emmanuelle Béart,2,Claire
+955,500,Tom Cruise,0,Ethan Hunt
+955,15336,Dougray Scott,1,Sean Ambrose
+955,9030,Thandiwe Newton,2,Nyah Hall
+956,500,Tom Cruise,0,Ethan Hunt
+956,1233,Philip Seymour Hoffman,1,Owen Davian
+956,10182,Ving Rhames,2,Luther
+9806,8977,Craig T. Nelson,0,Bob Parr / Mr. Incredible (voice)
+9806,18686,Holly Hunter,1,Helen Parr / Elastigirl (voice)
+9806,59361,Sarah Vowell,2,Violet Parr (voice)
+99861,3223,Robert Downey Jr.,0,Tony Stark / Iron Man
+99861,74568,Chris Hemsworth,1,Thor
+99861,103,Mark Ruffalo,2,Bruce Banner / Hulk

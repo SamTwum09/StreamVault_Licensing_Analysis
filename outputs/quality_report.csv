@@ -1,0 +1,7 @@
+check,result,details
+Unique film IDs,PASS,Film rows: 112
+Required film fields populated,PASS,Missing values: 0
+Positive budget and revenue,PASS,Films checked: 112
+Director relationships valid,PASS,Duplicates: 0; unmatched films: 0
+Actor relationships valid,PASS,Duplicates: 0; unmatched films: 0
+Release years populated,PASS,Films checked: 112

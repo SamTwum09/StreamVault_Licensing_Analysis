@@ -1,0 +1,9 @@
+category,movie_id,title,collection_id,collection_name,release_year,budget,revenue,revenue_budget_multiple,revenue_rank,multiple_rank,combined_rank
+Franchise,299534,Avengers: Endgame,86311.0,The Avengers Collection,2019,356000000,2942649778,8.265870162921349,1.0,7.0,8.0
+Franchise,12445,Harry Potter and the Deathly Hallows: Part 2,1241.0,Harry Potter Collection,2011,125000000,1341511219,10.732089752,5.0,3.0,8.0
+Franchise,122,The Lord of the Rings: The Return of the King,119.0,The Lord of the Rings Collection,2003,94000000,1118888979,11.903074244680852,7.0,1.0,8.0
+Standalone,27205,Inception,,,2010,160000000,839030630,5.2439414375,1.0,2.0,3.0
+Standalone,157336,Interstellar,,,2014,165000000,746606706,4.524889127272727,2.0,3.0,5.0
+Standalone,129,Spirited Away,,,2001,19000000,274925095,14.469741842105263,5.0,1.0,6.0
+Standalone,10681,WALL·E,,,2008,180000000,521311860,2.896177,3.0,6.0,9.0
+Standalone,1422,The Departed,,,2006,90000000,291465000,3.2385,4.0,5.0,9.0
