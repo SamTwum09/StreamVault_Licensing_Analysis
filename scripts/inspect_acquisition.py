@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # Locate acquisition report
-project_root = Path(__file__).resolve().parent
+project_root = Path(__file__).resolve().parents[1]
 
 report_path = (
     project_root
@@ -11,6 +11,12 @@ report_path = (
     / "reconciliation"
     / "acquisition_reconciliation.csv"
 )
+
+from pathlib import Path
+import pandas as pd
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+report_path = PROJECT_ROOT / "outputs" / "reconciliation" / "acquisition_reconciliation.csv"
 
 report = pd.read_csv(
     report_path,

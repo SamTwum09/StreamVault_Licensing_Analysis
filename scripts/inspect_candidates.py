@@ -3,7 +3,8 @@ import pandas as pd
 from pathlib import Path
 
 # 1. Locate the original candidate list
-file_path = Path("data/id_list.csv")
+project_root = Path(__file__).resolve().parents[1]
+file_path = project_root / "data" / "id_list.csv"
 
 if not file_path.exists():
     raise FileNotFoundError(
