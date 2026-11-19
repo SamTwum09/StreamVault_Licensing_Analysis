@@ -25,6 +25,15 @@ Prioritise franchise bundles for licensing negotiations while retaining selected
 | **Require $\ge 2$ Titles for Talent Rankings** | Eliminates single-hit wonders and isolates repeatable director/actor commercial signal. | High-potential talent with only 1 candidate title is excluded. | Candidate list is small (112 films); threshold can be relaxed to $\ge 1$ when scaling to 500 titles. |
 | **Use Top 3 Billed Cast as Lead Actors** | Standard industry proxy reflecting billing order and screen presence. | Ensembles where 4th-billed actor drives audience draw could be misattributed. | Cross-checked cast lists; top 3 captures marquee talent across all candidate titles. |
 
+> **Note on Formal Architecture Decision Records (ADRs):**  
+> For granular technical architecture specifications, see the individual ADRs in the [`decisions/`](../decisions/) directory:
+> * [`ADR-001`](../decisions/ADR-001-relational-data-model.md): Relational Data Modeling (3 Tables)
+> * [`ADR-002`](../decisions/ADR-002-negative-caching-api.md): Persistent Negative Caching & Offline Runner
+> * [`ADR-003`](../decisions/ADR-003-post-2000-decision-window.md): 2000-Onward Decision Window
+> * [`ADR-004`](../decisions/ADR-004-balanced-shortlist-ranking.md): Balanced Shortlist Ranking Model
+> * [`ADR-005`](../decisions/ADR-005-automated-data-quality-gate.md): Automated 6-Point Data Quality Gate
+> * [`ADR-006`](../decisions/ADR-006-modular-pipeline-orchestration.md): Modular Python Pipeline Orchestration
+
 ---
 
 ## 3. Franchise vs. Standalone Analysis Across Windows
