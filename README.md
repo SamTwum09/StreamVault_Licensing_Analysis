@@ -37,8 +37,8 @@ Each deliverable is aligned directly with the evaluation rubric:
 | **Working Pipeline (20%)** | [`run_pipeline.py`](run_pipeline.py) | **One-command orchestrator:** Executes acquisition, relational transformation, quality checks, and analytics with sub-20s measured runtime. |
 | **Data Quality Suite (20%)** | [`outputs/quality_report.csv`](outputs/quality_report.csv) | Automated 6-point integrity audit validating uniqueness, positive financials, and relationship integrity. |
 | **Architecture Decision Records** | [`decisions/`](decisions/) | 6 formal ADRs documenting relational normalization, negative caching, 2000-onward window, ranking model, quality gates, and pipeline orchestration. |
-| **Improvement Beyond Brief #1** | Section 6 of `client_memo.md` | **The $14M Capital Allocation Framework:** Structured deployment model ($8M franchise anchor, $3.5M standalone tactical, $2.5M reserve). |
-| **Improvement Beyond Brief #2** | `run_pipeline.py` & `src/fetch_tmdb.py` | **Live Meeting Runner & Negative Caching:** Allows Adjoa to rerun live in meetings offline in ~12 seconds. |
+| **Measurement Report (<20s Target)** | [`outputs/runtime_report.md`](outputs/runtime_report.md) | High-precision timing benchmark (16.11s median runtime, p95 17.23s) confirming <20s execution target. |
+| **Improvement Beyond Brief** | [`outputs/improvement.md`](outputs/improvement.md) | **$14M Capital Allocation Framework & Meeting Runner:** Structured deployment model and offline meeting runner. |
 
 ---
 
@@ -81,8 +81,11 @@ StreamVault_Licensing_Analysis/
 │   ├── client_memo.md         # 1-page executive decision memo
 │   ├── decision_notes.md      # Analytical reasoning and rejected alternatives
 │   ├── data_diagnosis.md      # Quality and candidate reconciliation diagnosis
+│   ├── improvement.md         # Improvement beyond the brief deliverable
+│   ├── runtime_report.md      # Measurement report on <20s target
 │   ├── quality_report.csv     # Automated data integrity test results
 │   └── reconciliation/        # Full row-by-row candidate acquisition audit
+├── scripts/                   # Development and inspection utilities
 └── src/                       # Modular pipeline stages
     ├── fetch_tmdb.py          # API acquisition with retries and negative caching
     ├── transform_tmdb.py      # Relational schema transformation
