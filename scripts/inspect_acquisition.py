@@ -3,14 +3,6 @@ import pandas as pd
 from pathlib import Path
 
 # Locate acquisition report
-project_root = Path(__file__).resolve().parents[1]
-
-report_path = (
-    project_root
-    / "outputs"
-    / "reconciliation"
-    / "acquisition_reconciliation.csv"
-)
 
 from pathlib import Path
 import pandas as pd
@@ -74,8 +66,8 @@ if not problems.empty:
     )
 
 # 4. Count saved raw JSON files
-movie_dir = project_root / "data" / "raw" / "movies"
-credits_dir = project_root / "data" / "raw" / "credits"
+movie_dir = PROJECT_ROOT / "data" / "raw" / "movies"
+credits_dir = PROJECT_ROOT / "data" / "raw" / "credits"
 
 movie_files = list(movie_dir.glob("*.json"))
 credits_files = list(credits_dir.glob("*.json"))
