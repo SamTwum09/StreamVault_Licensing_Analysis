@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import time
 
-start_time = time.time()
+start_time = time.perf_counter()
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data" / "processed"

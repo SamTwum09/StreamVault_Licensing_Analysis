@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import time
 
-start_time = time.time()
+start_time = time.perf_counter()
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -87,5 +87,5 @@ print(top_collections.to_string(index=False))
 
 print("\nNUMBER OF COLLECTIONS ANALYSED:", len(collections))
 print("TOTAL FRANCHISE FILMS INCLUDED:", len(franchise_films))
-print("Analysis time:", round(time.time() - start_time, 2), "seconds")
+print("Analysis time:", round(time.perf_counter() - start_time, 2), "seconds")
 print("Full results saved to:", output_path)

@@ -4,7 +4,7 @@ import pandas as pd
 import time
 
 # Start measuring analysis time
-start_time = time.time()
+start_time = time.perf_counter()
 
 # Locate the project folder
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -94,4 +94,4 @@ print("\nTOP 5 STANDALONE FILMS")
 print(top_standalones[columns].to_string(index=False))
 
 print(f"\nShortlist saved to: {output_path}")
-print(f"Analysis time: {time.time() - start_time:.2f} seconds")
+print(f"Analysis time: {time.perf_counter() - start_time:.2f} seconds")
