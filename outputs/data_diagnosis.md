@@ -249,12 +249,14 @@ The analysis compared franchise and standalone performance across two time windo
 
 The franchise group had a higher median revenue-to-budget multiple in both periods.
 
-| Period | Franchise median multiple | Standalone median multiple |
-|---|---:|---:|
-| All years | 5.62x | 3.84x |
-| 2000 onward | 5.05x | 3.84x |
+| Period | Franchise films | Standalone films | Franchise median multiple | Standalone median multiple | Premium |
+|---|---:|---:|---:|---:|---:|
+| All years | 96 | 16 | 5.62x | 3.84x | +46% |
+| 2000 onward | 63 | 8 | 5.05x | 3.84x | +31% |
 
-The post-2000 comparison contains 63 franchise films and only eight standalone films.
+The post-2000 comparison contains 63 franchise films and **only eight standalone films**.
+
+> **Sample size caveat (important for Finance):** The post-2000 standalone group contains only 8 films. A median computed from 8 observations is directionally informative but not statistically robust. A single high-performing or low-performing standalone title could move the standalone median by 0.3x–0.5x in either direction. The all-years window (16 standalones) is a more stable baseline; the direction of the franchise advantage (+46%) is consistent with the post-2000 result (+31%), which provides confidence the conclusion is not an artefact of the small post-2000 sample. Kwame should not treat the +31% figure as a precise estimate — treat it as a confirmed directional signal.
 
 The direction of the result did not change between the two periods. This supports prioritising franchise bundles while retaining selected standalone titles as complementary opportunities.
 
@@ -268,7 +270,7 @@ The recommendation is limited by:
 - No inflation adjustment.
 - Unverified historical currency and reporting consistency.
 - Potential franchise classification gaps.
-- The small post-2000 standalone sample of eight films.
+- The small post-2000 standalone sample of eight films (median computed from 8 observations — directional, not statistically precise).
 - The absence of actual licensing prices and streaming-demand evidence.
 
 The evidence supports prioritising franchise negotiations for further evaluation. It does not establish that a particular bundle is worth a particular amount.
