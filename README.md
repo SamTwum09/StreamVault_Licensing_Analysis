@@ -2,8 +2,7 @@
 
 An evidence-based commercial licensing analysis evaluating candidate film titles from the public TMDb API to support StreamVault's $14.0M content acquisition review on October 31.
 
-The workflow provides a fully reproducible, automated analytics pipeline that acquires, reconciles, validates, and analyzes movie and credit data across two time horizons (all years vs. 2000 onward) in under 20 seconds.
-
+The workflow provides a modular analytical pipeline that acquires, reconciles, validates and analyzes movie and credit data across two time horizons (all years versus 2000 onward). Cached runs are designed for rapid quarterly reruns; runtime depends on cache state, network access and local machine performance.
 ---
 
 ## 1. Quick Start (Reproducible in <20s)

@@ -28,7 +28,7 @@ I implement persistent local disk caching for all successful TMDb API responses 
 
 ## Consequences
 
-- **What this buys:** Predictable sub-20 second pipeline execution (16.7s measured), 100% offline reproducibility for Adjoa in meetings, and immunity to rate-limiting or network outages.
+- **What this buys:** Predictable cached execution, reduced repeat API requests, and the ability to rerun the analysis offline when all required source responses are already cached. Cached execution avoids unnecessary network calls, although uncached requests remain subject to network availability, API rate limits and retries.
 - **What this costs:** Consumes local disk storage (~250 files in `data/raw/`) and requires explicit manual cache invalidation if TMDb data needs a fresh sync.
 - **What it costs the client if I am wrong:** If a missing ID was caused by a temporary TMDb outage rather than a permanently invalid ID, caching `.notfound` prevents retrying unless manually cleared, potentially omitting a valid candidate title.
 - **What would make me revisit this:** A verified list of corrected IDs from the studios requiring complete cache invalidation.

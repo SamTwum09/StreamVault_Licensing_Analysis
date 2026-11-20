@@ -28,7 +28,7 @@ I orchestrate the end-to-end analytical workflow as modular, single-responsibili
 
 ## Consequences
 
-- **What this buys:** Clean CLI invocation (`python run_pipeline.py`), sub-20 second execution time, modular unit testing, and guaranteed reproducibility across machines.
+- **What this buys:** Clean CLI invocation (`python run_pipeline.py`), modular pipeline execution, reduced manual sequencing, and repeatable processing when the same input data, dependencies and configuration are available. Execution time depends on cache state, network availability and machine performance.
 - **What this costs:** Requires running separate inspection scripts for ad-hoc data viewing rather than clicking through interactive notebook cells.
 - **What it costs the client if I am wrong:** If Adjoa is unfamiliar with running Python scripts from a shell, she may find the command-line interface less visual than a spreadsheet or notebook UI.
 - **What would make me revisit this:** Transitioning the quarterly pipeline to an automated cloud batch job triggered on schedule or webhook.

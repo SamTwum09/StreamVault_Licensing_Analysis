@@ -28,11 +28,11 @@ I establish films released from 2000 onward as the primary analytical baseline f
 
 ## Consequences
 
-- **What this buys:** Directly neutralizes Finance’s skepticism and proves that the franchise advantage remains decisive (+31% multiple advantage in post-2000 vs +46% across all years).
+- **What this buys:** Addresses Finance's concern about older historical financial comparability by using the post-2000 subset as the primary decision window. The franchise advantage remains directionally consistent in both windows (+31% in the post-2000 comparison versus +46% across all years), although neither window independently validates TMDb's financial figures.
 - **What this costs:** Filters out 41 older candidate titles from primary consideration in the final shortlist.
 - **What it costs the client if I am wrong:** StreamVault might overlook low-cost back-catalog classics from the 1980s and 1990s that could have been licensed at deep discounts.
 - **What would make me revisit this:** If studios present vintage catalog bundles at nominal bulk fees (e.g., under $200k/film), prompting an evaluation of older back-catalog economics.
 
 ## What this survives
 
-Survives rigorous corporate finance and board audit, ensuring the commercial acquisition case remains methodologically unassailable.
+Provides a transparent comparison that can be repeated as the candidate list grows. The decision remains subject to source-data verification, licensing prices, rights availability and commercial demand.

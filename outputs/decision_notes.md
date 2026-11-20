@@ -73,17 +73,18 @@ The rubric requires explicit documentation of real alternatives and what the rec
 | Alternative Model | Why Rejected | What the Recommendation / Shortlist Looks Like Under This Alternative |
 |---|---|---|
 | **Alternative A: Rank Exclusively by Total Revenue** | Favors mega-budget studio releases without regard to capital efficiency or production cost. | **Recommendation shifts to Pure Blockbusters:** Standalone shortlist becomes dominated by high-budget titles (`WALL·E` at $180M budget, `Interstellar` at $165M, `Inception` at $160M), entirely eliminating high-margin gems like `Spirited Away` ($19M budget, $275M revenue). For franchises, *Harry Potter* drops below *Avengers*, and *Lord of the Rings* is demoted, leading StreamVault to overpay for expensive studio tentpoles. |
-| **Alternative B: Rank Exclusively by Revenue Multiple** | Favors low-budget anomalies with high return multiples but minimal absolute audience volume. | **Recommendation shifts to Niche/Micro-Budget:** The standalone shortlist becomes dominated by low-grossing indie/foreign titles (`Spirited Away` 14.5x, `Memento` 4.45x, `Requiem for a Dream` 1.64x), while eliminating massive audience drivers like `Inception` (5.24x) and `Interstellar` (4.52x). In franchises, *The Lord of the Rings* (11.73x) and *Ice Age* (8.26x) top the list, while *The Avengers* (6.87x) is deprioritized, leaving StreamVault with niche content that fails to prevent platform churn. |
+| **Alternative B: Rank Exclusively by Revenue Multiple** | Favors low-budget anomalies with high return multiples but minimal absolute audience volume. | **Recommendation shifts to Niche/Micro-Budget:** The standalone shortlist becomes dominated by low-grossing indie/foreign titles (`Spirited Away` 14.5x, `Memento` 4.45x, `Requiem for a Dream` 1.64x), while eliminating massive audience drivers like `Inception` (5.24x) and `Interstellar` (4.52x). In franchises, *The Lord of the Rings* (11.73x) and *Ice Age* (8.26x) top the list, while *The Avengers* (6.87x) is deprioritized,This approach would favour titles with high historical revenue-to-budget multiples, potentially reducing the emphasis on absolute box-office scale. Without streaming audience or churn data, the effect on subscriber retention cannot be established. |
 | **Alternative C: All-Years Window Exclusively** | Relies on unadjusted pre-2000 figures vulnerable to currency and reporting distortions. | **Recommendation stays Franchise-First, but Shortlist Changes:** Classic franchises with unadjusted low historical budgets (e.g., original *Star Wars* or *The Godfather*) rise to the top of multiple rankings. Yaw in Finance immediately rejects the analysis during the board review due to unadjusted inflation, stalling Kwame's funding approval. |
-| **Alternative D: 100% Capital Allocation to Standalone Cherry-Picks** | Eliminates weak franchise middle entries, but forfeits binge mechanics. | **Recommendation shifts to Single-Title Bidding:** StreamVault bids individually on 15–20 standalone titles. Negotiating costs increase by 10x, marketing cannot leverage series bingeing, and competitors easily outbid StreamVault for marquee tentpoles. |
+| **Alternative D: 100% Capital Allocation to Standalone Cherry-Picks** | This approach could increase the number of individual negotiations and reduce the ability to secure titles together. It may also sacrifice bundle opportunities, although the actual negotiation-cost increase and competitive impact were not measured. | **Recommendation shifts to Single-Title Bidding:** StreamVault bids individually on 15–20 standalone titles. Negotiating costs increase by 10x, marketing cannot leverage series bingeing, and competitors easily outbid StreamVault for marquee tentpoles. |
 
 ---
 
 ## 6. Scalability: What Survives and What Requires Intervention at 500 Titles
 
 Adjoa will rerun this quarterly on her laptop, scaling to ~500 titles next year.
+The architecture is suitable for expanding to approximately 500 titles, although API acquisition time, cache storage, metadata quality and collection mapping will require monitoring.
 
-### What Survives Seamlessly:
+### What Survives:
 * **Relational Data Architecture:** The separation of `films`, `directors`, and `lead_actors` scales with $O(N)$ complexity and prevents data duplication.
 * **Vectorized Processing:** Groupby and ranking algorithms execute in sub-second time on 500 titles without row-level iteration.
 * **Automated Data Quality Suite:** The 6-point integrity check (`src/quality_checks.py`) continues to catch schema drift, orphans, and nulls automatically.
@@ -93,7 +94,7 @@ Adjoa will rerun this quarterly on her laptop, scaling to ~500 titles next year.
 1. **API Rate Limiting & Batching:** Pulling 500 titles requires 1,000 API requests (500 details + 500 credits). At 4 requests/sec, an un-cached run takes ~4.5 minutes. Adjoa must ensure local caching is enabled and avoid clearing the cache immediately before live meetings.
 2. **Missing Collections Edge Cases:** In a 500-title dataset, certain studio series (e.g., reboots or shared universes like DC/Marvel) may lack formal TMDb collection IDs. A semi-automated alias mapping should be maintained.
 3. **Talent Sample Thresholds:** With 500 titles, the minimum film threshold for directors and actors should be increased from $\ge 2$ to $\ge 3$ candidate titles to filter out coincidental performance.
-4. **End-to-End Orchestrator:** Running 11 scripts manually during a live meeting is infeasible. An automated runner (`run_pipeline.py`) is deployed to execute the entire sequence in a single command.
+4. **End-to-End Orchestrator:** The seven-stage pipeline is orchestrated through `run_pipeline.py`, allowing Adjoa to execute acquisition, transformation, quality validation and analysis with one command. This reduces manual sequencing and the risk of running stages out of order. The pipeline remains dependent on a valid environment configuration and either usable cached data or API access.
 
 ---
 

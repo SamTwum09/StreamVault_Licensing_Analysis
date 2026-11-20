@@ -284,15 +284,18 @@ The final analysis contains 112 distinct films out of 117 unique valid numeric I
 2. **1 Blank Row & 3 Invalid IDs (`-1`, `tt0468569`, `N/A`):** 4 source entries that could not be mapped to TMDb numeric IDs without external verification.
 3. **5 Unretrieved Numeric IDs (HTTP 404):** IDs 8471293, 9412887, 8471294, 9412888, 7733901 returned 404 errors on both movie and credits endpoints.
 
-### Quantifying the Cost of the Gap to Kwame:
-The 5 unretrieved IDs represent **4.3% of the valid candidate pool (5 / 117)**. 
 
-While the exact titles cannot be determined from TMDb alone, their financial and negotiation cost can be bounded:
-* **The "Hidden Bundle Trap" Exposure:** Studios frequently package weaker or unlisted middle entries into franchise bundles ("take all six Space Raider films or none"). If 2 or 3 of these unretrieved IDs belong to studio collections under active consideration (e.g. unlisted sequels or spin-offs), StreamVault could be forced to license them as mandatory tie-ins. At an estimated average licensing cost of $300,000 to $500,000 per catalog title, an unmodeled mandatory title represents an **unexpected capital drain of $600,000 to $1.5M** against Kwame's $14M envelope (4% to 11% of total budget).
-* **Opportunity Cost of Omission:** If any of the 5 missing titles is a high-performing standalone title (similar to *Spirited Away* with a 14.5x multiple), StreamVault misses the opportunity to license an efficient audience driver, potentially leaving it to competitors.
-* **Negotiation Risk:** Entering a licensing review without accounting for 5 candidate IDs allows studio licensing desks or Finance (Yaw) to challenge the completeness of Kwame's model.
+ ### What the Candidate Gap Costs Kwame
 
-**Mitigation:** Kwame must instruct his acquisition team to demand complete, contractually binding title schedules and IMDb/TMDb identifier confirmation directly from the studio before finalizing the bundle deal.
+The five unretrieved numeric IDs represent 4.3% of the 117 unique valid numeric IDs submitted for retrieval.
+
+Their financial impact cannot be quantified because the intended titles, collection relationships, historical financial performance and licensing terms are unknown.
+
+The principal risk is decision coverage. If any missing titles belong to collections under consideration, their absence could change collection composition, bundle requirements, shortlist rankings or negotiation priorities. If any represent strong standalone candidates, StreamVault may overlook an acquisition opportunity.
+
+The missing titles also weaken the completeness of the negotiation position because the candidate list cannot be assumed to represent every title relevant to a studio bundle.
+
+**Mitigation:** Kwame should require studios to provide a complete title schedule, confirm identifiers and verify all mandatory bundle inclusions before signing.
 
 ## 10. What Could Not Be Verified
 

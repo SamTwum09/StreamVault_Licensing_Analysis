@@ -17,9 +17,9 @@ Furthermore, Adjoa needed the ability to rerun the quantitative pipeline dynamic
 
 ## What it is worth to Kwame
 
-- **Boardroom Defense:** Provides Kwame with an airtight defense before the Board, proving that every dollar of the $14.0M is tied to quantified historical box office scale and return multiples.
-- **Negotiating Discipline:** Establishes firm bidding ceilings (e.g. walk away if Disney demands >$6.0M for *The Avengers*), preventing studio price gouging.
-- **Live Meeting Agility:** Gives Adjoa and Kwame the confidence to rerun the pipeline live in boardrooms in 16 seconds without risking live API crashes or rate limit lockouts.
+- **Boardroom Defense:**Provides Kwame with a structured starting point for defending the proposed allocation, linking negotiation priorities to historical performance while keeping the reserve available for rights, pricing and bundle uncertainty. It improves budget discipline, but does not prove that the proposed licensing fees will generate a financial return.
+- **Negotiating Discipline:**The proposed ceilings are negotiation controls based on the available budget and prioritisation model. They are not independently calculated valuations of the licensing rights. Final commitments should be made only after confirming the full rights package, asking price, expected streaming demand and contract terms.
+- **Live Meeting Agility:** Live Meeting Agility: Gives Adjoa a cached, locally repeatable pipeline that can run without relying on live API access when the required data has already been retrieved. This reduces the risk of network interruptions and rate limits affecting a meeting rerun, but does not remove the risk of incomplete caches or pipeline errors.
 
 ## What it cost
 
