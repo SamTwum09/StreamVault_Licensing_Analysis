@@ -207,7 +207,7 @@ It does not measure:
 
 ## 6. Franchise Classification Limitations
 
-I classified a film as a franchise title when TMDb supplied a `belongs_to_collection` value.
+I classified a film as a franchise title when TMDb's movie record included a collection entry — indicating it belongs to a named film series.
 
 This produced:
 

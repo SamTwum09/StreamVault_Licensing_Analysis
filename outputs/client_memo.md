@@ -10,7 +10,7 @@
 ### 1. Executive Recommendation: Prioritise Franchise Bundles
 Commit the majority of the $14.0M capital envelope to **franchise bundles**, while deploying a disciplined allocation to **standalone hits** as tactical complements.
 
-* **The Evidence:** Evaluating candidate films from 2000 onward, franchise entries generated a median historical box-office-to-budget multiple of **5.05x** (and **5.62x** across all years), versus **3.84x** for standalone films in both periods.Franchise candidates showed stronger historical box-office performance relative to reported production budgets in this sample. Their multi-title structure also offers a potential catalog and marketing advantage, although streaming retention and licensing returns were not measured.
+* **The Evidence:** Evaluating candidate films from 2000 onward, franchise entries generated a median historical box-office-to-budget multiple of **5.05x** (and **5.62x** across all years), versus **3.84x** for standalone films in both periods. Franchise candidates showed stronger historical box-office performance relative to reported production budgets in this sample. Their multi-title structure also offers a potential catalog and marketing advantage, although streaming retention and licensing returns were not measured.
 * **The Window Comparison (Addressing Finance):** Finance’s concern regarding pre-2000 reporting anomalies is warranted. When restricting the portfolio to 2000-onward releases, the franchise multiple moderates slightly from 5.62x to 5.05x, but **the commercial advantage remains decisive (+31% multiple advantage)**. The recommendation does not change between windows.
 
 ---
@@ -28,8 +28,7 @@ Commit the majority of the $14.0M capital envelope to **franchise bundles**, whi
 #### B. Top 5 Standalone Complementary Targets (Cherry-Pick Pricing)
 1. **Inception (2010 | $839.0M Box Office | 5.24x Multiple):** It has the highest standalone theatrical revenue in the candidate pool, combined with a strong historical revenue-to-budget multiple and critically acclaimed director. This makes it a strong anchor asset for negotiations, although its streaming value would require further assessment.
 2. **Interstellar (2014 | $746.6M Box Office | 4.52x Multiple):** Its substantial theatrical revenue, science-fiction appeal and strong historical performance make it a credible standalone negotiation target. Streaming demand and licensing value would still need validation.
-3. **Spirited Away (2001 | $274.9M Box Office | 14.47x Multiple):**
-It achieved the highest historical revenue-to-budget multiple in the modern standalone pool, offering a distinctive animation candidate with strong historical performance relative to production cost.
+3. **Spirited Away (2001 | $274.9M Box Office | 14.47x Multiple):** It achieved the highest historical revenue-to-budget multiple in the modern standalone pool, offering a distinctive animation candidate with strong historical performance relative to production cost.
 4. **WALL·E (2008 | $521.3M Box Office | 2.90x Multiple):** This Disney/Pixar title offers family appeal and strong brand recognition, as reflected in its theatrical revenue. Its historical box-office scale and established family-animation profile make it a candidate for family-oriented catalog coverage. Its streaming retention contribution remains unmeasured.
 5. **The Departed (2006 | $291.5M Box Office | 3.24x Multiple):** Multi-talent prestige thriller with high appeal to adult subscriber segments, filling a key genre gap at moderate licensing cost.
 
@@ -52,8 +51,7 @@ Negotiators should use historical talent performance as leverage when studios ju
 ### 5. What Could Not Be Verified & What It Costs You
 1. **Five Missing Valid Titles (4.3% of Candidate Pool):** Five numeric IDs (including 8471293 and 9412887) returned unretrieved records. If any of these represent uncredited franchise titles, studio bundle requirements could be higher than modeled.
 2. **Four Invalid/Blank Source Entries:** Source rows with placeholder and external IDs were excluded, narrowing decision coverage.
-3. **Unadjusted Historical Figures:** Financial figures reflect historical nominal box office, not adjusted for inflation or streaming subscription economics. A blockbuster theatrical run does not guarantee low streaming churn.
-* **The Cost:** If studio bundle terms mandate taking unrepresented, low-performing middle entries not in this list, StreamVault risks margin erosion. Negotiators must require studios to supply complete title lists and verified territory availability before binding commitments.
+3. **Unadjusted Historical Figures:** Financial figures reflect historical nominal box office, not adjusted for inflation or streaming subscription economics. A blockbuster theatrical run does not guarantee low streaming churn. If studio bundle terms mandate taking unrepresented, low-performing middle entries not in this list, StreamVault risks margin erosion. Negotiators must require studios to supply complete title lists and verified territory availability before binding commitments.
 
 ---
 
