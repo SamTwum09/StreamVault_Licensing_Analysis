@@ -1,4 +1,3 @@
-
 import os
 import json
 import time
@@ -168,7 +167,11 @@ def fetch_tmdb(endpoint, output_file):
             if response.status_code in [401, 403, 404]:
                 if response.status_code == 404:
                     try:
-                        with open(output_file.with_suffix(".notfound"), "w", encoding="utf-8") as f:
+                        with open(
+                            output_file.with_suffix(".notfound"),
+                            "w",
+                            encoding="utf-8"
+                        ) as f:
                             f.write("404")
                     except OSError:
                         pass

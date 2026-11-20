@@ -1,12 +1,11 @@
-
 from pathlib import Path
 import os
 import requests
 from dotenv import load_dotenv
 
 # 1. Load variables from the .env file
-project_root = Path(__file__).resolve().parents[1]
-load_dotenv(project_root / ".env")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(PROJECT_PROJECT_ROOT / ".env")
 
 # 2. Retrieve the API key without displaying it
 api_key = os.getenv("TMDB_API_KEY")

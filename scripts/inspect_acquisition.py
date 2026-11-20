@@ -1,4 +1,3 @@
-
 import pandas as pd
 from pathlib import Path
 
@@ -7,8 +6,8 @@ from pathlib import Path
 from pathlib import Path
 import pandas as pd
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-report_path = PROJECT_ROOT / "outputs" / "reconciliation" / "acquisition_reconciliation.csv"
+PROJECT_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+report_path = PROJECT_PROJECT_ROOT / "outputs" / "reconciliation" / "acquisition_reconciliation.csv"
 
 report = pd.read_csv(
     report_path,
@@ -66,8 +65,8 @@ if not problems.empty:
     )
 
 # 4. Count saved raw JSON files
-movie_dir = PROJECT_ROOT / "data" / "raw" / "movies"
-credits_dir = PROJECT_ROOT / "data" / "raw" / "credits"
+movie_dir = PROJECT_PROJECT_ROOT / "data" / "raw" / "movies"
+credits_dir = PROJECT_PROJECT_ROOT / "data" / "raw" / "credits"
 
 movie_files = list(movie_dir.glob("*.json"))
 credits_files = list(credits_dir.glob("*.json"))

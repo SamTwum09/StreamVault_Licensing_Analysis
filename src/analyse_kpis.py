@@ -1,14 +1,14 @@
-
-import time
+import sys
 from pathlib import Path
-
+import time
 import pandas as pd
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT / "src"))
+from utils import coerce_boolean_franchise
 
-# 1. Locate project folders
-ROOT = Path(__file__).resolve().parents[1]
-INPUT_FILE = ROOT / "data" / "processed" / "films.csv"
-OUTPUT_DIR = ROOT / "data" / "processed"
+INPUT_FILE = PROJECT_ROOT / "data" / "processed" / "films.csv"
+OUTPUT_DIR = PROJECT_ROOT / "data" / "processed"
 
 start_time = time.perf_counter()
 
@@ -23,13 +23,8 @@ films["release_year"] = pd.to_numeric(
     films["release_year"], errors="coerce"
 )
 
-# Ensure franchise classification is Boolean
-films["is_franchise"] = (
-    films["is_franchise"]
-    .astype(str)
-    .str.lower()
-    .map({"true": True, "false": False})
-)
+# Ensure franchise classification is Boolean using centralized helper
+films["is_franchise"] = coerce_boolean_franchise(films["is_franchise"])
 
 
 # 3. Calculate film-level financial indicators
@@ -67,28 +62,27 @@ for period_name, period_data in periods.items():
         mean_return_proxy_pct=("return_proxy_pct", "mean")
     ).reset_index()
 
-    for _, row in grouped.iterrows():
-        results.append({
-            "period": period_name,
-            "category": (
-                "Franchise" if row["is_franchise"]
-                else "Standalone"
-            ),
-            "film_count": row["film_count"],
-            "median_budget": row["median_budget"],
-            "median_revenue": row["median_revenue"],
-            "median_revenue_budget_multiple":
-                row["median_revenue_budget_multiple"],
-            "median_return_proxy_pct":
-                row["median_return_proxy_pct"],
-            "mean_revenue": row["mean_revenue"],
-            "mean_return_proxy_pct":
-                row["mean_return_proxy_pct"]
-        })
+    formatted = grouped.assign(
+        period=period_name,
+        category=grouped["is_franchise"].map({True: "Franchise", False: "Standalone"})
+    )
+    results.extend(formatted.to_dict("records"))
 
 
 # 6. Create the final KPI table
 kpi_table = pd.DataFrame(results)
+columns_order = [
+    "period",
+    "category",
+    "film_count",
+    "median_budget",
+    "median_revenue",
+    "median_revenue_budget_multiple",
+    "median_return_proxy_pct",
+    "mean_revenue",
+    "mean_return_proxy_pct"
+]
+kpi_table = kpi_table[columns_order]
 
 # Save the output
 output_file = OUTPUT_DIR / "franchise_standalone_kpis.csv"

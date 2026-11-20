@@ -1,4 +1,4 @@
-
+import sys
 from pathlib import Path
 import pandas as pd
 import time
@@ -8,6 +8,8 @@ start_time = time.perf_counter()
 
 # Locate the project folder
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT / "src"))
+from utils import coerce_boolean_franchise
 
 # Load the cleaned film dataset
 films = pd.read_csv(PROJECT_ROOT / "data" / "processed" / "films.csv")
@@ -16,6 +18,7 @@ films = pd.read_csv(PROJECT_ROOT / "data" / "processed" / "films.csv")
 films["budget"] = pd.to_numeric(films["budget"], errors="coerce")
 films["revenue"] = pd.to_numeric(films["revenue"], errors="coerce")
 films["release_year"] = pd.to_numeric(films["release_year"], errors="coerce")
+films["is_franchise"] = coerce_boolean_franchise(films["is_franchise"])
 
 # Calculate commercial performance indicators
 films["revenue_budget_multiple"] = films["revenue"] / films["budget"]
@@ -24,8 +27,8 @@ films["revenue_budget_multiple"] = films["revenue"] / films["budget"]
 recent_films = films[films["release_year"] >= 2000].copy()
 
 # Separate franchise and standalone films
-franchises = recent_films[recent_films["is_franchise"] == True].copy()
-standalones = recent_films[recent_films["is_franchise"] == False].copy()
+franchises = recent_films[recent_films["is_franchise"]].copy()
+standalones = recent_films[~recent_films["is_franchise"]].copy()
 
 # Rank franchise films by commercial scale and efficiency
 franchises["revenue_rank"] = franchises["revenue"].rank(

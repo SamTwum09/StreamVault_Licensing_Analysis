@@ -1,4 +1,4 @@
-
+import sys
 from pathlib import Path
 import pandas as pd
 import time
@@ -6,6 +6,8 @@ import time
 start_time = time.perf_counter()
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT / "src"))
+from utils import coerce_boolean_franchise
 
 films = pd.read_csv(
     PROJECT_ROOT / "data" / "processed" / "films.csv"
@@ -17,6 +19,7 @@ films["revenue"] = pd.to_numeric(films["revenue"], errors="coerce")
 films["release_year"] = pd.to_numeric(
     films["release_year"], errors="coerce"
 )
+films["is_franchise"] = coerce_boolean_franchise(films["is_franchise"])
 
 films["revenue_budget_multiple"] = (
     films["revenue"] / films["budget"]
@@ -27,9 +30,7 @@ recent_films = films[films["release_year"] >= 2000].copy()
 
 # Keep franchise films with a recorded TMDb collection
 franchise_films = recent_films[
-    recent_films["is_franchise"].astype(str).str.lower().isin(
-        ["true", "1"]
-    )
+    recent_films["is_franchise"]
     & recent_films["collection_id"].notna()
 ].copy()
 
