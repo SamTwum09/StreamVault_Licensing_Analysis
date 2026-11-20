@@ -1,100 +1,111 @@
+"""
+Multi-Criteria Film and Bundle Shortlisting.
+Ranks candidate films released from 2000 onward by combined revenue scale
+and capital efficiency ranks, selecting the top 3 franchise and top 5 standalone titles.
+"""
+
 import sys
 from pathlib import Path
 import pandas as pd
 import time
 
-# Start measuring analysis time
-start_time = time.perf_counter()
-
-# Locate the project folder
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(PROJECT_ROOT / "src"))
 from utils import coerce_boolean_franchise
 
-# Load the cleaned film dataset
-films = pd.read_csv(PROJECT_ROOT / "data" / "processed" / "films.csv")
 
-# Prepare numeric columns
-films["budget"] = pd.to_numeric(films["budget"], errors="coerce")
-films["revenue"] = pd.to_numeric(films["revenue"], errors="coerce")
-films["release_year"] = pd.to_numeric(films["release_year"], errors="coerce")
-films["is_franchise"] = coerce_boolean_franchise(films["is_franchise"])
+def generate_shortlist():
+    """Generate balanced multi-criteria licensing shortlist."""
+    start_time = time.perf_counter()
 
-# Calculate commercial performance indicators
-films["revenue_budget_multiple"] = films["revenue"] / films["budget"]
+    films = pd.read_csv(PROJECT_ROOT / "data" / "processed" / "films.csv")
 
-# Focus on films released from 2000 onward
-recent_films = films[films["release_year"] >= 2000].copy()
+    # Prepare numeric columns
+    films["budget"] = pd.to_numeric(films["budget"], errors="coerce")
+    films["revenue"] = pd.to_numeric(films["revenue"], errors="coerce")
+    films["release_year"] = pd.to_numeric(films["release_year"], errors="coerce")
+    films["is_franchise"] = coerce_boolean_franchise(films["is_franchise"])
 
-# Separate franchise and standalone films
-franchises = recent_films[recent_films["is_franchise"]].copy()
-standalones = recent_films[~recent_films["is_franchise"]].copy()
+    # Calculate commercial performance indicators
+    films["revenue_budget_multiple"] = films["revenue"] / films["budget"]
 
-# Rank franchise films by commercial scale and efficiency
-franchises["revenue_rank"] = franchises["revenue"].rank(
-    ascending=False, method="min"
-)
-franchises["multiple_rank"] = franchises["revenue_budget_multiple"].rank(
-    ascending=False, method="min"
-)
-franchises["combined_rank"] = (
-    franchises["revenue_rank"] + franchises["multiple_rank"]
-)
+    # Focus on films released from 2000 onward
+    recent_films = films[films["release_year"] >= 2000].copy()
 
-# Rank standalone films using the same method
-standalones["revenue_rank"] = standalones["revenue"].rank(
-    ascending=False, method="min"
-)
-standalones["multiple_rank"] = standalones["revenue_budget_multiple"].rank(
-    ascending=False, method="min"
-)
-standalones["combined_rank"] = (
-    standalones["revenue_rank"] + standalones["multiple_rank"]
-)
+    # Separate franchise and standalone films
+    franchises = recent_films[recent_films["is_franchise"]].copy()
+    standalones = recent_films[~recent_films["is_franchise"]].copy()
 
-# Select the top 3 franchise films and top 5 standalone films
-top_franchises = franchises.sort_values(
-    ["combined_rank", "revenue"], ascending=[True, False]
-).head(3)
+    # Rank franchise films by commercial scale and efficiency
+    franchises["revenue_rank"] = franchises["revenue"].rank(
+        ascending=False, method="min"
+    )
+    franchises["multiple_rank"] = franchises["revenue_budget_multiple"].rank(
+        ascending=False, method="min"
+    )
+    franchises["combined_rank"] = (
+        franchises["revenue_rank"] + franchises["multiple_rank"]
+    )
 
-top_standalones = standalones.sort_values(
-    ["combined_rank", "revenue"], ascending=[True, False]
-).head(5)
+    # Rank standalone films using the same method
+    standalones["revenue_rank"] = standalones["revenue"].rank(
+        ascending=False, method="min"
+    )
+    standalones["multiple_rank"] = standalones["revenue_budget_multiple"].rank(
+        ascending=False, method="min"
+    )
+    standalones["combined_rank"] = (
+        standalones["revenue_rank"] + standalones["multiple_rank"]
+    )
 
-# Keep the fields needed to explain the shortlist
-columns = [
-    "movie_id",
-    "title",
-    "collection_id",
-    "collection_name",
-    "release_year",
-    "budget",
-    "revenue",
-    "revenue_budget_multiple",
-    "revenue_rank",
-    "multiple_rank",
-    "combined_rank",
-]
+    # Select the top 3 franchise films and top 5 standalone films
+    top_franchises = franchises.sort_values(
+        ["combined_rank", "revenue"], ascending=[True, False]
+    ).head(3)
 
-shortlist = pd.concat(
-    [
-        top_franchises.assign(category="Franchise"),
-        top_standalones.assign(category="Standalone"),
+    top_standalones = standalones.sort_values(
+        ["combined_rank", "revenue"], ascending=[True, False]
+    ).head(5)
+
+    # Keep the fields needed to explain the shortlist
+    columns = [
+        "movie_id",
+        "title",
+        "collection_id",
+        "collection_name",
+        "release_year",
+        "budget",
+        "revenue",
+        "revenue_budget_multiple",
+        "revenue_rank",
+        "multiple_rank",
+        "combined_rank",
     ]
-)
 
-shortlist = shortlist[["category"] + columns]
+    shortlist = pd.concat(
+        [
+            top_franchises.assign(category="Franchise"),
+            top_standalones.assign(category="Standalone"),
+        ]
+    )
 
-# Save the shortlist
-output_path = PROJECT_ROOT / "data" / "processed" / "licensing_shortlist.csv"
-shortlist.to_csv(output_path, index=False)
+    shortlist = shortlist[["category"] + columns]
 
-# Display results
-print("\nTOP 3 FRANCHISE FILMS")
-print(top_franchises[columns].to_string(index=False))
+    # Save the shortlist
+    output_path = PROJECT_ROOT / "data" / "processed" / "licensing_shortlist.csv"
+    shortlist.to_csv(output_path, index=False)
 
-print("\nTOP 5 STANDALONE FILMS")
-print(top_standalones[columns].to_string(index=False))
+    # Display results
+    print("\nTOP 3 FRANCHISE FILMS")
+    print(top_franchises[columns].to_string(index=False))
 
-print(f"\nShortlist saved to: {output_path}")
-print(f"Analysis time: {time.perf_counter() - start_time:.2f} seconds")
+    print("\nTOP 5 STANDALONE FILMS")
+    print(top_standalones[columns].to_string(index=False))
+
+    print(f"\nShortlist saved to: {output_path}")
+    print(f"Analysis time: {time.perf_counter() - start_time:.2f} seconds")
+    return shortlist
+
+
+if __name__ == "__main__":
+    generate_shortlist()
