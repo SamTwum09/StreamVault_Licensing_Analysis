@@ -19,13 +19,7 @@ Commit the majority of the $14.0M capital envelope to **franchise bundles**, whi
 
 #### A. Top 3 Franchise Bundle Targets (Priority Bidding)
 1. **The Avengers Collection (4 candidate films | $7.92B Total Box Office | 6.87x Median Multiple):**  
-   ### 2.1. Deal Note: The Avengers Collection
-
-The Avengers Collection is my first negotiation priority because it combines the strongest cumulative box-office scale in the shortlisted collections with a 6.87x median historical revenue-to-budget multiple across the four candidate titles.
-
-I recommend opening negotiations with a target allocation of up to $5.0M, but treating this as a provisional negotiation ceiling rather than a valuation derived from box-office performance. Before committing, validate the complete bundle inventory, territories, exclusivity, license duration, rights availability and expected streaming demand. If the required fee exceeds our approved limit or the rights package materially changes, pause and reassess against the Lord of the Rings and Harry Potter alternatives.
-
-The number that most drives my priority is $7.92B in cumulative historical box-office revenue across four candidate films. This demonstrates commercial scale, not expected streaming revenue.
+   The Avengers Collection is the first negotiation priority because it combines the strongest cumulative box-office scale in the shortlisted collections with a 6.87x median historical revenue-to-budget multiple across the four candidate titles. Opening allocation ceiling: **up to $5.0M** — treat as a negotiation cap, not a derived valuation. Before committing, validate the complete bundle inventory, territories, exclusivity, license duration, rights availability and expected streaming demand. If the required fee exceeds the approved limit or the rights package materially changes, pivot to *The Lord of the Rings* and *Harry Potter* alternatives. The number driving this priority is **$7.92B** in cumulative historical box-office revenue across four films — demonstrating commercial scale, not expected streaming revenue.
 2. **The Lord of the Rings Collection (3 candidate films | $2.92B Total Box Office | 11.73x Median Multiple):**  
    *Why it made the cut:* It recorded the highest median historical revenue-to-budget multiple among the shortlisted collections, alongside substantial total box-office revenue. Its established film series makes it an attractive bundle candidate, subject to licensing price and rights availability.
 3. **Harry Potter Collection (8 candidate films | $7.76B Total Box Office | 6.17x Median Multiple):**  

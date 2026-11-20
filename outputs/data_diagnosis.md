@@ -289,9 +289,16 @@ The final analysis contains 112 distinct films out of 117 unique valid numeric I
 
 The five unretrieved numeric IDs represent 4.3% of the 117 unique valid numeric IDs submitted for retrieval.
 
-Their financial impact cannot be quantified because the intended titles, collection relationships, historical financial performance and licensing terms are unknown.
+Their financial impact cannot be precisely quantified because the intended titles, collection relationships, historical financial performance and licensing terms are unknown. However, scenario analysis illustrates the plausible range of exposure:
 
-The principal risk is decision coverage. If any missing titles belong to collections under consideration, their absence could change collection composition, bundle requirements, shortlist rankings or negotiation priorities. If any represent strong standalone candidates, StreamVault may overlook an acquisition opportunity.
+| Scenario | Assumption | Estimated Decision Exposure |
+|---|---|---|
+| **Low impact** | All 5 are low-performing standalone titles with below-median multiples (~2x–3x) | Minimal shortlist change; no collection affected |
+| **Medium impact** | 1–2 missing titles belong to a shortlisted collection (e.g., Avengers or Harry Potter) | Collection composition and bundle requirements change; negotiated ceiling may need revision |
+| **High impact** | 1–2 are strong standalone candidates (e.g., comparable to *Inception* at 5.24x) | Standalone shortlist rankings shift; up to 1–2 slots displaced; potential $500K–$1M misallocation |
+| **Critical impact** | A missing title is a mandatory studio bundle inclusion | StreamVault commits to a bundle without full title coverage, risking margin erosion on forced add-ons |
+
+The principal risk is decision coverage, not a known dollar loss. If any missing titles belong to collections under consideration, their absence could change collection composition, bundle requirements, shortlist rankings or negotiation priorities. If any represent strong standalone candidates, StreamVault may overlook an acquisition opportunity.
 
 The missing titles also weaken the completeness of the negotiation position because the candidate list cannot be assumed to represent every title relevant to a studio bundle.
 
