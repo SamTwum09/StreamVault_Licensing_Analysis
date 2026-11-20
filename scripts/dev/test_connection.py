@@ -4,7 +4,7 @@ import requests
 from dotenv import load_dotenv
 
 # 1. Load variables from the .env file
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 load_dotenv(PROJECT_PROJECT_ROOT / ".env")
 
 # 2. Retrieve the API key without displaying it

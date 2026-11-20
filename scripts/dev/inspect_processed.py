@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA = PROJECT_PROJECT_ROOT / "data" / "processed"
 
 films = pd.read_csv(DATA / "films.csv")

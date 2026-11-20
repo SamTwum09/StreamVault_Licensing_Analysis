@@ -1,43 +1,49 @@
-# StreamVault Content Licensing Analysis ($14M Decision Review)
+# StreamVault Content Licensing Analysis
 
-An evidence-based commercial licensing analysis evaluating candidate film titles from the public TMDb API to support StreamVault's $14.0M content acquisition review on October 31.
+An evidence-based commercial licensing analysis evaluating candidate film titles from the public TMDb API to support StreamVault's content acquisition review.
 
-The workflow provides a modular analytical pipeline that acquires, reconciles, validates and analyzes movie and credit data across two time horizons (all years versus 2000 onward). Cached runs are designed for rapid quarterly reruns; runtime depends on cache state, network access and local machine performance.
+The workflow provides a modular analytical pipeline that acquires, reconciles, validates, and analyzes movie and credit data across two time horizons (all years versus 2000 onward).
+
 ---
 
-## 1. Quick Start (Reproducible in <20s)
+## 1. Environment & Quick Start
+
+- **Python Version:** `Python 3.15.2` (requires Python 3.10+)
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/SamTwum09/StreamVault_Licensing_Analysis.git
 cd StreamVault_Licensing_Analysis
 
-# 2. Install dependencies
+# 2. Install exact pinned dependencies
 pip install -r requirements.txt
 
 # 3. Configure your TMDb API key in .env
-echo "TMDB_API_KEY=your_tmdb_api_key_here" > .env
+# Copy the provided template:
+cp .env.example .env
+# Edit .env and insert your personal TMDb API key:
+# TMDB_API_KEY=your_key_here
 
-# 4. Run the full automated pipeline
+# 4. Run unit tests
+python -m unittest discover -s tests -v
+
+# 5. Run the full automated pipeline
 python run_pipeline.py
 ```
 
 ---
 
-## 2. Core Deliverables & Rubric Map
+## 2. Core Deliverables
 
-Each deliverable is aligned directly with the evaluation rubric:
-
-| Deliverable / Rubric Area | Location | Core Focus & Client Value |
+| Deliverable | Location | Description |
 | :--- | :--- | :--- |
-| **Client Memo (20%)** | [`outputs/client_memo.md`](outputs/client_memo.md) | **1-page business executive memo:** Strategic recommendation, two-window comparison, 3 franchise & 5 standalone shortlists with per-title rationales, talent signals, deal note, and capital framework. |
-| **Data Diagnosis (20%)** | [`outputs/data_diagnosis.md`](outputs/data_diagnosis.md) | **Full candidate audit:** 127-row reconciliation, risk rankings, and quantified financial exposure of the 5 missing titles. |
-| **Decision Notes (20%)** | [`outputs/decision_notes.md`](outputs/decision_notes.md) | **Methodology & defense:** Assumptions, cost if wrong, 500-title scalability analysis, and exact outcomes under real rejected alternatives. |
-| **Working Pipeline (20%)** | [`run_pipeline.py`](run_pipeline.py) | **One-command orchestrator:** Executes acquisition, relational transformation, quality checks, and analytics with sub-20s measured runtime. |
-| **Data Quality Suite (20%)** | [`outputs/quality_report.csv`](outputs/quality_report.csv) | Automated 6-point integrity audit validating uniqueness, positive financials, and relationship integrity. |
+| **Client Memo** | [`outputs/client_memo.md`](outputs/client_memo.md) | Business executive memo: strategic recommendation, two-window comparison, franchise and standalone shortlists with per-title rationales, talent signals, and deal risk guidance. |
+| **Data Diagnosis** | [`outputs/data_diagnosis.md`](outputs/data_diagnosis.md) | Full candidate audit: 127-row reconciliation, risk rankings, and scenario exposure for unretrieved candidate titles. |
+| **Decision Notes** | [`outputs/decision_notes.md`](outputs/decision_notes.md) | Methodology & defense: assumptions, cost if wrong, 500-title scalability analysis, and exact outcomes under rejected alternatives. |
+| **Working Pipeline** | [`run_pipeline.py`](run_pipeline.py) | Master pipeline runner executing data acquisition, relational normalization, quality gate, and analysis stages in sequence. |
+| **Data Quality Suite** | [`outputs/quality_report.csv`](outputs/quality_report.csv) | Automated 6-point integrity audit validating uniqueness, positive financials, and referential integrity. |
+| **Unit Tests** | [`tests/test_basics.py`](tests/test_basics.py) | Unit tests verifying boolean coercion, film ID uniqueness, and 127-row candidate reconciliation accounting. |
 | **Architecture Decision Records** | [`decisions/`](decisions/) | 6 formal ADRs documenting relational normalization, negative caching, 2000-onward window, ranking model, quality gates, and pipeline orchestration. |
-| **Measurement Report (<20s Target)** | [`outputs/runtime_report.md`](outputs/runtime_report.md) | High-precision timing benchmark (16.11s median runtime, p95 17.23s) confirming <20s execution target. |
-| **Improvement Beyond Brief** | [`outputs/improvement.md`](outputs/improvement.md) | **$14M Capital Allocation Framework & Meeting Runner:** Structured deployment model and offline meeting runner. |
 
 ---
 
@@ -51,16 +57,7 @@ Franchises demonstrated higher historical capital efficiency and audience reach 
 | **All Years (112 titles)** | **5.62x** | **3.84x** | +46% | Prioritise Franchise Bundles |
 | **2000 Onward (71 titles)** | **5.05x** | **3.84x** | +31% | Prioritise Franchise Bundles |
 
-*Addressing Finance (Yaw):* Restricting the window to post-2000 titles eliminates pre-2000 reporting anomalies. The franchise advantage remains decisive (+31%), confirming the recommendation is robust across both windows.
-
-### Recommended Acquisition Targets
-* **Top Franchise Collection:** *The Avengers Collection* (4 candidate titles | $7.92B box office | 6.87x multiple). Bidding ceiling capped at **35%–40% of budget ($5.0M–$5.6M)**.
-* **Complementary Franchise Targets:** *The Lord of the Rings Collection* (11.73x multiple) and *Harry Potter Collection* (6.17x multiple).
-* **Tactical Standalone Shortlist:** *Inception* (5.24x), *Interstellar* (4.52x), *Spirited Away* (14.47x), *WALL·E* (2.90x), and *The Departed* (3.24x).
-
-### Negotiating Levers (Talent Signals)
-* **Directors:** Anthony & Joe Russo (7.55x multiple, $5.0B revenue) and Peter Jackson (6.73x multiple, $5.85B revenue across 6 films).
-* **Marquee Actors:** Chris Evans & Mark Ruffalo (6.90x multiple, $5.8B–$6.5B) for action ensembles; Elijah Wood & Viggo Mortensen (11.73x multiple) for evergreen titles.
+*Addressing Finance:* Restricting the window to post-2000 titles eliminates pre-2000 reporting anomalies. The franchise advantage remains consistent (+31%), confirming the recommendation is robust across both windows.
 
 ---
 
@@ -68,24 +65,32 @@ Franchises demonstrated higher historical capital efficiency and audience reach 
 
 ```text
 StreamVault_Licensing_Analysis/
-├── run_pipeline.py            # Master one-command pipeline runner
-├── requirements.txt           # Python package dependencies
-├── README.md                  # Executive overview and navigation
+├── run_pipeline.py            # Master pipeline runner
+├── requirements.txt           # Exact pinned package dependencies
+├── .env.example               # Template for environment configuration
+├── .gitignore                 # Excludes .env, caches, and generated files
+├── README.md                  # Project overview, setup, and navigation
 ├── decisions/                 # 6 Architecture Decision Records (ADR-001 to ADR-006)
+├── tests/                     # Automated unit test suite
+│   └── test_basics.py         # Tests for utils, transforms, and reconciliation
 ├── data/
 │   ├── id_list.csv            # Original 127 candidate IDs
 │   ├── raw/                   # Cached TMDb JSON responses (movies & credits)
-│   └── processed/             # 3 normalized relational tables (films, directors, actors)
+│   └── processed/             # 3 normalized relational tables (generated by pipeline)
 ├── outputs/
-│   ├── client_memo.md         # 1-page executive decision memo
+│   ├── client_memo.md         # Executive decision memo
 │   ├── decision_notes.md      # Analytical reasoning and rejected alternatives
 │   ├── data_diagnosis.md      # Quality and candidate reconciliation diagnosis
-│   ├── improvement.md         # Improvement beyond the brief deliverable
-│   ├── runtime_report.md      # Measurement report on <20s target
-│   ├── quality_report.csv     # Automated data integrity test results
+│   ├── quality_report.csv     # Automated data integrity test results (generated)
 │   └── reconciliation/        # Full row-by-row candidate acquisition audit
-├── scripts/                   # Development and inspection utilities
+├── scripts/
+│   └── dev/                   # Ad-hoc development & inspection utilities (not part of pipeline)
+│       ├── inspect_acquisition.py
+│       ├── inspect_candidates.py
+│       ├── inspect_processed.py
+│       └── test_connection.py
 └── src/                       # Modular pipeline stages
+    ├── utils.py               # Shared utility functions (boolean coercion)
     ├── fetch_tmdb.py          # API acquisition with retries and negative caching
     ├── transform_tmdb.py      # Relational schema transformation
     ├── quality_checks.py      # 6 automated data integrity checks
@@ -95,11 +100,13 @@ StreamVault_Licensing_Analysis/
     └── analyse_talent.py      # Director and lead actor commercial signals
 ```
 
+> **Note on `scripts/dev/`:** Scripts inside `scripts/dev/` are ad-hoc developer inspection and connection utilities. They are not part of the automated execution pipeline.
+
 ---
 
-## 5. Technical Highlights & Scalability to 500 Titles
+## 5. Technical Highlights & Scalability
 
 1. **Relational Data Architecture:** Normalizes nested JSON into 3 separate tables (`films`, `directors`, `lead_actors`) with `many_to_one` join validation to prevent double-counting financial metrics.
 2. **Vectorized Computation:** Uses Pandas vectorization and grouping operations without row iteration.
-3. **Negative Caching:** Retains missing/404 statuses locally so repeat runs avoid redundant network calls and run completely offline in seconds.
+3. **Negative Caching:** Retains missing/404 statuses locally as `.notfound` sentinels so repeat runs avoid redundant network calls.
 4. **Automated Quality Gate:** Enforces 6 structural validation tests before analytical outputs are generated.

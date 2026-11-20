@@ -6,7 +6,7 @@ from pathlib import Path
 from pathlib import Path
 import pandas as pd
 
-PROJECT_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_PROJECT_ROOT = Path(__file__).resolve().parents[2]
 report_path = PROJECT_PROJECT_ROOT / "outputs" / "reconciliation" / "acquisition_reconciliation.csv"
 
 report = pd.read_csv(

@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 # 1. Locate the original candidate list
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 file_path = PROJECT_PROJECT_ROOT / "data" / "id_list.csv"
 
 if not file_path.exists():
